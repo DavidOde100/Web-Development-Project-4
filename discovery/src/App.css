@@ -1,0 +1,124 @@
+/* Reset some default browser styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Center the entire app on the page */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Style the header */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Style the description text */
+p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+/* Style the photo container */
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Style the rover photo */
+.photo-container img {
+  width: 300px; /* Set the width to your desired fixed size */
+  height: 200px; /* Set the height to your desired fixed size */
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the rover photo details */
+.photo-container p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Style the "Ban" and "Unban" buttons */
+.photo-container button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.photo-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the "New Random Photo" button */
+.photo-container button:nth-child(2) {
+  background-color: #FF5733;
+  margin-top: 1rem;
+}
+
+.photo-container button:nth-child(2):hover {
+  background-color: #b33c00;
+}
+
+/* Style the banned attributes list */
+h2 {
+  font-size: 1.2rem;
+  color: #FF5733;
+  margin-top: 1rem;
+}
+
+/* Style the list of banned attributes */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style each banned attribute item */
+ul li {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0.25rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the "Unban" button in the banned attributes list */
+ul li button {
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the "Unban" button on hover */
+ul li button:hover {
+  background-color: #b33c00;
+}
